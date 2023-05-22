@@ -1,0 +1,70 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+
+
+/* 
+font-family: 'DM Sans', sans-serif;
+font-family: 'Poppins', sans-serif; 
+*/
+
+/* * {
+border: 1px solid red;
+} */
+:root {
+    --blackpure: #000000;
+    --black: #171718;
+    --black-border: #26292D;
+    --white: #FFFFFF;
+    --puple: #5C62EC;
+
+
+    --darck-bg: var(--black);
+    --text-color: var(--black);
+    --darck-border: var(--black-border);
+    --header-text: var(--white);
+    --accent: var(--puple);
+
+    /* light mode */
+    --page-bg: var(--white);
+    --text-color: var(--black);
+    --title-1: var(--accent);
+    --project-card-bg: var(--white);
+    --project-card-text: var(--black);
+    --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
+
+}
+
+.dark {
+
+    /* dark mode */
+
+    --page-bg: #252526;
+    --text-color: var(--white);
+    --title-1: var(--white);
+    --project-card-bg: var(--black);
+    --project-card-text: var(--white);
+    --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.8);
+
+}
+
+html,
+body {
+    
+    min-height: 100vh;
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: -0.5px;
+
+    /* light mode */
+    background-color: var(--page-bg);
+    color: var(--text-color);
+}
+
+#root{
+    min-height: 100vh;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
